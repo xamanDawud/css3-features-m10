@@ -6,10 +6,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Transform</title>
+    <style>
+        .container {
+            width: 300px;
+            background-color: cadetblue;
+            border: 1px solid saddlebrown;
+            height: 300px;
+        }
+
+        .box {
+            width: 300px;
+            background-color: salmon;
+            border: 1px solid darkcyan;
+            height: 300px;
+            transition: transform 2s ease-in-out, background-color 3s linear;
+        }
+
+        .box:hover {
+            transform: rotate(180deg) scale(0.6) translateX(-200px);
+            background-color: seagreen;
+            cursor: pointer;
+        }
+    </style>
 </head>
 
 <body>
-
+    <div class="container">
+        <div class="box">
+            <p>box-1</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="box">
+            <p>box-2</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="box">
+            <p>box-3</p>
+        </div>
+    </div>
 </body>
 
 </html>
